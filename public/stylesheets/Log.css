@@ -1,0 +1,97 @@
+.form_bg {
+    background-color:#E1EEF2;
+    color:#666;
+    padding:20px;
+    border-radius:10px;
+    position: relative;
+    border:2px solid black;
+    margin: 0.0em auto;
+    top:1em;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    }
+    
+@media only screen and (max-width: 600px) {
+   .form_bg{ 
+    width: 300px;
+    height: 550px;
+    }
+    .form-group{
+        width:250px;
+        padding:auto;
+    }
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .form_bg{ 
+        width: 400px;
+        height: 650px;
+        }
+        .form-group{
+            width:350px;
+            padding:auto;
+        }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .form_bg{ 
+        width: 400px;
+        height: 550px;
+        }
+        .form-group{
+            width:320px;
+        }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .form_bg{ 
+        width: 500px;
+        height: 535px;
+        }
+        .form-group{
+            width:450px;
+        }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .form_bg{ 
+        width: 500px;
+        height: 535px;
+        }
+        .form-group{
+            width:450px;
+        }
+}
+body{
+    background-image: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/EVeDgMMCximbyooji/videoblocks-abstract-background-with-blue-molecule-structure-low-poly-4k-motion-graphics_shwtbi4_thumbnail-full01.png);
+    background-size: cover;
+    background-repeat: repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar-inverse {
+    background-color: #2A383D;
+}
+
+.align-center {
+    text-align:center;
+}
+
+
+#A{
+    color:black;
+}
+a{
+    /*text-decoration:underline;*/
+}
+#bottom-align-text{
+    position:absolute;
+    bottom:0;
+    right:0
+}

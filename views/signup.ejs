@@ -1,0 +1,93 @@
+<% include ./partials/header %>
+
+    <link rel="stylesheet" href="/stylesheets/Log.css" type="text/css">
+    <script src="./../public/js/moreHtml.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Charmonman|Kaushan+Script|Mirza|Marck+Script|Noto+Serif+KR|Tinos|Euphoria+Script|Antic+Slab|Sorts+Mill+Goudy" rel="stylesheet">
+</head>
+<body >
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span> 
+            </button>
+            <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-globe">GroupChat</a>
+          </div>
+          <div class="collapse navbar-collapse myNavbar">
+            <ul class="nav navbar-nav">
+                <li ><a href="/">Home</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right myNavbar">  
+                <li><a href="/login"><span class="glyphicon glyphicon-user"></span>Login</a></li>
+          </ul>
+        </div>
+      </nav>
+    <div class="container">
+        <div class="row">
+            <div class="form_bg">
+                <form action="/signup" method="post"  enctype="multipart/form-data">
+                     <h2 id="A" class="text-center" style="font-family:Sorts Mill Goudy">Sign Up</h2>
+                     <p>Please fill in this form to create an Account!</p>
+                    <div class="form-group">
+                        <input type="name" class="form-control" id="fname" placeholder=" Username"name="userid">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder=" Email"name="email">
+                    </div>
+                    <div class="form-group">
+                        <label>Choose Profile Picture</label>
+                        <input type="file" class="form-control" id="image" placeholder="Choose Profile Picture" name="image">
+                    </div>
+                    <div class="form-group">
+                        <select name="isAdmin" id="isAdmin" class="form-control" onchange="test($('#isAdmin :selected').val())">
+                            <option selected>--Select an Option--</option>
+                            <option value="Faculty">Faculty</option>
+                            <option value="Student">Student</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select id="moreHtml" class="form-control" name="subject"></select>
+                    </div>
+                    <!--<div class="form-group">
+                        <input type="age" class="form-control" id="age" min="13" placeholder="age" name="age">
+                    </div>	
+                -->
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="pwd" placeholder="Password" name="pwd">
+                    </div>	
+                     <label>
+      <input type="checkbox" checked="checked" required name="remember" style="margin-bottom:15px"> by clicking this u agree to the <a href="/terms" style="color:dodgerblue">Terms & Privacy</a>
+    </label>	
+				</br>
+				<div class="align-center">
+
+                <a href="/" class="btn btn-info">Cancel</a>
+                <button type="submit" class="btn btn-info" id="login">SIGN UP</button>
+                          </div>	
+				    
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+     $('#moreHtml').css({'display':'none'})
+    function test(optionValue){
+        if(optionValue==="Faculty"){
+            $('#moreHtml').empty()
+            $('#moreHtml').css({'display':'block'})
+            $('#moreHtml').append($('<option>', {value:"IOT", text:'IOT'},))
+            $('#moreHtml').append($('<option>', {value:"IP", text:'Internet Programming'},))
+            $('#moreHtml').append($('<option>', {value:"ADMT", text:'ADMT'},))
+            $('#moreHtml').append($('<option>', {value:"CNS", text:'CNS'},))
+
+
+        }
+        else{
+            $('#moreHtml').css({'display':'none'})  
+        }
+    }
+</script>
+
+<% include ./partials/footer %>

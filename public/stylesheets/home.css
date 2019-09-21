@@ -1,0 +1,111 @@
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.footer{
+  display: flex;
+  background-color:#2D373B;
+  color: white;
+}
+
+.footer a{
+  color:white;
+}
+
+.Content{
+  width: 50%;
+  text-align: center;
+
+}
+
+.middle {
+  margin-left: 500px;
+  margin-right: auto;
+  min-width:150px;
+}
+
+.right {
+  float:right;
+  width:150px;
+}
+* {
+   margin: 0;
+   padding: 0;
+  }
+
+.jumbotron
+{   margin-top:0px;
+    padding-top: 0px;
+    padding-bottom:0px;
+    background-size: cover;
+    background: contain;
+    /*background:transparent;*/
+    width: 100%; /* make sure to define width to fill container */
+    height: 160px; /* define the height in pixels or make sure   */
+                   /* you have something in your div with height */
+                   /* so you can see your image */
+    max-width:1400px;  /* define the max width */
+ }
+ .separator-type, .title-type, .intro-type, .content-type .intro-type p {
+  position: relative;
+}
+
+.parallax {
+  background-attachment: inherit !important;
+}
+.parallax {
+  background-attachment: inherit !important;
+  /*background-repeat: repeat;*/
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  z-index: -20;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.fa {
+font-size: 42px;
+}
+
+.btn, .btn-blk {
+  font-size: 18px !Important;
+}
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create two equal columns that sits next to each other */
+
+.container {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+@media only screen and (max-width: 600px) {
+  textarea{
+    width:90%;
+    height:90%;
+  }
+}
